@@ -24,7 +24,7 @@ function App() {
     console.log(tabContent);
   };
 
-  console.log("AApp component executing!");
+  console.log("App component executing!");
 
   return (
     <div>
