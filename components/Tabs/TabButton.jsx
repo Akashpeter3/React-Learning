@@ -1,4 +1,4 @@
-export default function TabButton({ children, onSelect, isSelected }) {
+export default function TabButton({ children, isSelected, ...props }) {
   console.log("Tab button component executing!");
 
   // document.querySelector('button').addEventListener('click', () => {
@@ -11,7 +11,7 @@ export default function TabButton({ children, onSelect, isSelected }) {
 
   return (
     <li>
-      <button className={isSelected ? "active" : ""} onClick={onSelect}>
+      <button className={isSelected ? "active" : undefined} {...props}>
         {children}
       </button>
     </li>
